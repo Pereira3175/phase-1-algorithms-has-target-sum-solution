@@ -1,5 +1,15 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+const seenNumbers = {
+  }
+  for (i = 0; i < array.length; i++) {
+    console.log(seenNumbers)
+    const complement = target - array[i]
+    if (seenNumbers[complement]) return true
+    seenNumbers[array[i]] = true
+
+  }
+  return false
 }
 
 /* 
